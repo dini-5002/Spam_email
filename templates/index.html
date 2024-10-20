@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Spam Detection</h1>
+        <form id="email-form">
+            <label for="email_text">Enter your email text:</label>
+            <textarea id="email_text" name="email_text" rows="10" cols="50" required></textarea>
+            <button type="submit">Check Spam</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <!-- Link to external JS file -->
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
